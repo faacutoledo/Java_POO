@@ -9,8 +9,8 @@ public class Principal {
         Scanner scan = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
         Matematica matematica = new Matematica();
 
-        matematica.setNumero1(Math.random() * 20);
-        matematica.setNumero2(Math.random() * 20);
+        matematica.setNumero1(Math.random() * 10);
+        matematica.setNumero2(Math.random() * 10);
         System.out.println("el numero 1 es : "+ matematica.getNumero1());
         System.out.println("el numero 2 es : "+ matematica.getNumero2());
         System.out.printf("\n El valor mayor es %.2f \n",matematica.devolverMayor());

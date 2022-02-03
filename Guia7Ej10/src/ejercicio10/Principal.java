@@ -20,28 +20,28 @@ public class Principal {
    
     public static void main(String[] args) {
         
-        double[] A = new double[50];
-        double[] B = new double[20];
+        double[] vectorA = new double[50];
+        double[] vectorB = new double[20];
          
-        for (int i = 0; i < A.length-1; i++) {
-            A[i]= Math.round(Math.random()*10);
-            System.out.print("["+A[i]+"]");
+        for (int i = 0; i < vectorA.length-1; i++) {
+            vectorA[i]= Math.round(Math.random()*10);
+            System.out.print("["+vectorA[i]+"]");
         }
         
-        Arrays.sort(A); /// Ordenado de menor a mayor
+        Arrays.sort(vectorA); /// Ordenado de menor a mayor
         
         System.out.println("");
         
-        for (int i = 0; i < A.length-1; i++) {
-            System.out.print("["+A[i]+"]");
+        for (int i = 0; i < vectorA.length-1; i++) {
+            System.out.print("["+vectorA[i]+"]");
         }
         
-        for (int i = 0; i < B.length-1; i++) {
+        for (int i = 0; i < vectorB.length-1; i++) {
             
             if (i<10) {
-                B[i]=A[i];
+                vectorB[i]=vectorA[i];
             }else{
-                B[i]=0.5;
+                vectorB[i]=0.5;
             }
                         
         }
@@ -49,16 +49,16 @@ public class Principal {
         
         ///////////// MOSTRAR ARREGLOS
         System.out.println("");
-        System.out.println("VECTOR A\n");
+        System.out.println("VECTOR A");
         
-        for (int i = 0; i < A.length-1; i++) {
-            System.out.print("["+A[i]+"]");
+        for (int i = 0; i < vectorA.length-1; i++) {
+            System.out.print("["+vectorA[i]+"]");
         }
         System.out.println("");
-        System.out.println("VECTOR B \n");
+        System.out.println("VECTOR B");
         
-        for (int i = 0; i < B.length-1; i++) {
-            System.out.print("["+B[i]+"]");
+        for (int i = 0; i < vectorB.length-1; i++) {
+            System.out.print("["+vectorB[i]+"]");
         }
         
         
